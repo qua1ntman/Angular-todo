@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-angular';
+  public title: '';
+
+  constructor (title: any) {
+    this.title = title
+  }
+
+  addTodo(): void {
+  //   if (this.title) {
+  //     title = this.title
+  //   }
+  }
 }
